@@ -1,0 +1,28 @@
+.main_nav {
+  height: 150px;
+    img {
+        margin-top: 5%;
+    }
+}
+.navigation {
+    text-transform: uppercase;
+    display: inline-block;
+    list-style: none;
+    display: inline-block;
+    float: right;
+    margin-top: 6%;
+    li {
+        display: inline-block;
+        padding-left: 30px;
+        a {
+            color: $diffrent-text-color;
+            display: inline-block;
+            font-size: $font-size-s;
+            font-weight: 300;
+        }
+        a:hover {
+            color: $color;
+            font-weight: 500;
+        }
+    }
+}

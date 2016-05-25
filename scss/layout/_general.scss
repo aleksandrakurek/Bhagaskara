@@ -1,0 +1,123 @@
+.container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+@media (max-width: $mobile) {
+    .container {
+        width: 90vw;
+        border: 0.1em solid red;
+    }
+}
+//zamkniecie media dla mobile
+@media (min-width: $mobile) and (max-width:$desktop) {
+    .container {
+        width: 90vw;
+        border: 1px solid blue;
+    }
+}
+//zamkniecie media dla mobile-desktop
+@media (min-width: $desktop) {
+    .container {
+        width: 1080px;
+        border: 1px solid green;
+    }
+}
+// zamkniecie media dla desktop
+
+.flex_box {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-between;
+}
+.accent_color {
+    color: $color;
+}
+a,
+h2,
+h3,
+p,
+span {
+    text-align: center;
+    font-weight: 300;
+    color: $text-color;
+    text-decoration: none;
+}
+$col-number: 12;
+$base-col: 100%/$col-number;
+@for $i from 1 through $col-number {
+    .col-#{$i} {
+        width: $base-col * $i;
+    }
+}
+.row {
+    margin: 10px;
+}
+.row:after,
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class^="col-"] {
+    float: left;
+    min-height: 10px;
+    padding: 5px;
+}
+.sectionTitle {
+    $width: 300px;
+    position: relative;
+    width: $width;
+    text-align: center;
+    line-height: 50px;
+    margin: 10% auto 0;
+    span {
+        display: inline-block;
+        padding: 5px;
+        color: $diffrent-text-color;
+        font-size: $font-size-l;
+        .accent_color {
+            color: $color;
+        }
+    }
+    span::before {
+        width: calc(#{$width}*0.1);
+        height: calc(#{$width}*0.1);
+        content: "";
+        border-bottom: 1px solid $color;
+        border-left: 1px solid $color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    span::after {
+        width: calc(#{$width}*0.1);
+        height: calc(#{$width}*0.1);
+        content: "";
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+//  @extend .button;
+.button {
+    cursor: pointer;
+    background-color: $color;
+    color: $text-color;
+    font-size: $font-size-m;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: normal;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0 6px 0 0 #6b2e68;
+}

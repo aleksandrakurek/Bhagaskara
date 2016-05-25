@@ -1,0 +1,182 @@
+.main_header {
+    background: url("/images/background_pic.png") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100vw;
+}
+.logo_text {
+    .logo {
+        text-align: center;
+        height: auto;
+    }
+}
+.section_item_header {
+    background: url("/images/shape1.svg") no-repeat top center;
+    display: inline-block;
+    position: relative;
+    padding-top: 160px;
+    margin: 0 auto;
+    width: 190px;
+    height: 190px;
+    &::before {
+        background-repeat: no-repeat;
+        background-position: center;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+    }
+    p {
+        color: $text-color;
+        line-height: 30px;
+        margin-top: -40px;
+        font-size: $font-size-s;
+        font-weight: 300;
+    }
+}
+.section_item_header--about {
+    &::before {
+        background-image: url("/images/settings.svg");
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        left: 46%;
+    }
+}
+.section_item_header--team {
+    &::before {
+        background-image: url("/images/user.svg");
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        left: 46%;
+    }
+}
+.section_item_header--services {
+    &::before {
+        background-image: url("/images/bubble.svg");
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        left: 46%;
+    }
+}
+.section_item_header--portfolio {
+    &::before {
+        background-image: url("/images/photo.svg");
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        left: 46%;
+    }
+}
+.section_item_header--blog {
+    &::before {
+        background-image: url("/images/pen.svg");
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        left: 46%;
+    }
+}
+.section_item_header--contact {
+    &::before {
+        background-image: url("/images/paperplane.svg");
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        left: 46%;
+    }
+}
+.section_item_header:hover {
+    background-image: url("/images/shape3.svg");
+}
+.nav_icon_arrange {
+    margin: 0 auto;
+    text-align: center;
+}
+@media (max-width: $mobile) {
+    .logo_text {
+        .logo {
+            margin-left: 5%;
+            padding: 10px;
+            width: 90%;
+        }
+        p {
+            padding-top: 10px;
+        }
+    }
+    .icons_arrange_center,
+    .icons_arrange_left,
+    .icons_arrange_right {
+        padding-top: 5px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+//zamkniecie media dla mobile
+@media (min-width: $mobile) and (max-width:$desktop) {
+    .logo_text {
+        .logo {
+            margin-left: 5%;
+            width: 90%;
+        }
+        p {
+            padding-top: 10px;
+        }
+    }
+    .icons_arrange_center,
+    .icons_arrange_left,
+    .icons_arrange_right {
+        padding-top: 5px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+//zamkniecie media dla mobile-desktop
+@media (min-width: $desktop) {
+    .logo_text {
+        .logo {
+            margin-left: 30%;
+            padding: 10px;
+            width: 500px;
+        }
+        h3 {
+            font-size: $font-size-l;
+            line-height: 50px;
+            font-weight: lighter;
+        }
+        p {
+            margin-top: -20px;
+            font-size: $font-size-m;
+            font-weight: lighter;
+        }
+    }
+    .icons_arrange_center {
+        padding-top: 125px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .icons_arrange_left {
+        float: left;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .icons_arrange_right {
+        float: right;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .nav_icon_arrange {
+        padding-top: 200px;
+    }
+}
+// zamkniecie media dla desktop

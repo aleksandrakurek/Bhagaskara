@@ -1,0 +1,45 @@
+//Mobile
+$mobile: 320px;
+$large-mobile: 480px;
+$tablet: 768px;
+$desktop: 960px;
+$large-desktop: 1080px;
+
+ //Breakpoints
+ @mixin breakpoint($breakpoint, $media: screen) {
+     @if $breakpoint == large-mobile {
+         @media only #{$media} and (min-width: $large-mobile) {
+             @content;
+         }
+     }
+     @else if $breakpoint == tablet {
+         @media only #{$media} and (min-width: $tablet) {
+             @content;
+         }
+     }
+     @else if $breakpoint == desktop {
+         @media only #{$media} and (min-width: $desktop) {
+             @content;
+         }
+     }
+     @else if $breakpoint == large-desktop {
+         @media only #{$media} and (min-width: $large-desktop) {
+             @content;
+         }
+     }
+ }
+
+
+ //
+ // @include breakpoint($large-mobile){
+ //   //
+ // };
+ // @include breakpoint($tablet){
+ //   //
+ // };
+ // @include breakpoint($desktop){
+ //   //
+ // };
+ // @include breakpoint($large-desktop){
+ //   //
+ // };
