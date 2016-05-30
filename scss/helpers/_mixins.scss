@@ -30,6 +30,20 @@ $large-desktop: 1080px;
  }
 
 
+ @media (max-width: $mobile) {
+
+ }
+ //zamkniecie media dla mobile
+ @media (min-width: $mobile) and (max-width:$desktop) {
+
+ }
+ //zamkniecie media dla mobile-desktop
+ @media (min-width: $desktop) {
+
+ }
+ // zamkniecie media dla desktop
+
+
  //
  // @include breakpoint($large-mobile){
  //   //
