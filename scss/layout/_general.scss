@@ -25,27 +25,11 @@
 }
 // zamkniecie media dla desktop
 
-.flex_box {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    align-content: space-between;
-}
+
 .accent_color {
     color: $color;
 }
-a,
-h2,
-h3,
-p,
-span {
-    text-align: center;
-    font-weight: 300;
-    color: $text-color;
-    text-decoration: none;
-}
+
 $col-number: 12;
 $base-col: 100%/$col-number;
 @for $i from 1 through $col-number {
@@ -67,43 +51,135 @@ $base-col: 100%/$col-number;
     min-height: 10px;
     padding: 5px;
 }
-.sectionTitle {
-    $width: 300px;
-    position: relative;
-    width: $width;
-    text-align: center;
-    line-height: 50px;
-    margin: 10% auto 0;
-    span {
-        display: inline-block;
-        padding: 5px;
-        color: $diffrent-text-color;
-        font-size: $font-size-l;
-        .accent_color {
-            color: $color;
-        }
-    }
-    span::before {
-        width: calc(#{$width}*0.1);
-        height: calc(#{$width}*0.1);
-        content: "";
-        border-bottom: 1px solid $color;
-        border-left: 1px solid $color;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-    span::after {
-        width: calc(#{$width}*0.1);
-        height: calc(#{$width}*0.1);
-        content: "";
-        border-top: 1px solid $color;
-        border-right: 1px solid $color;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+
+
+@media (max-width: $mobile) {
+  .sectionTitle {
+      $width: 300px;
+      position: relative;
+      width: $width;
+      text-align: center;
+      line-height: 50px;
+      margin: 10% auto 0;
+      span {
+          display: inline-block;
+          padding: 5px;
+          color: $diffrent-text-color;
+          font-size: $font-size-s;
+          .accent_color {
+              color: $color;
+          }
+      }
+      span::before {
+          width: calc(#{$width}*0.1);
+          height: calc(#{$width}*0.1);
+          content: "";
+          border-bottom: 1px solid $color;
+          border-left: 1px solid $color;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+      }
+      span::after {
+          width: calc(#{$width}*0.1);
+          height: calc(#{$width}*0.1);
+          content: "";
+          border-top: 1px solid $color;
+          border-right: 1px solid $color;
+          position: absolute;
+          top: 0;
+          right: 0;
+      }
+  }
 }
+//zamkniecie media dla mobile
+@media (min-width: $mobile) and (max-width:$desktop) {
+  .sectionTitle {
+      $width: 300px;
+      position: relative;
+      width: $width;
+      text-align: center;
+      line-height: 50px;
+      margin: 10% auto 0;
+      span {
+          display: inline-block;
+          padding: 5px;
+          color: $diffrent-text-color;
+          font-size: $font-size-m;
+          .accent_color {
+              color: $color;
+          }
+      }
+      span::before {
+          width: calc(#{$width}*0.1);
+          height: calc(#{$width}*0.1);
+          content: "";
+          border-bottom: 1px solid $color;
+          border-left: 1px solid $color;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+      }
+      span::after {
+          width: calc(#{$width}*0.1);
+          height: calc(#{$width}*0.1);
+          content: "";
+          border-top: 1px solid $color;
+          border-right: 1px solid $color;
+          position: absolute;
+          top: 0;
+          right: 0;
+      }
+  }
+}
+//zamkniecie media dla mobile-desktop
+@media (min-width: $desktop) {
+  .sectionTitle {
+      $width: 300px;
+      position: relative;
+      width: $width;
+      text-align: center;
+      line-height: 50px;
+      margin: 10% auto 0;
+      span {
+          display: inline-block;
+          padding: 5px;
+          color: $diffrent-text-color;
+          font-size: $font-size-l;
+          .accent_color {
+              color: $color;
+          }
+      }
+      span::before {
+          width: calc(#{$width}*0.1);
+          height: calc(#{$width}*0.1);
+          content: "";
+          border-bottom: 1px solid $color;
+          border-left: 1px solid $color;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+      }
+      span::after {
+          width: calc(#{$width}*0.1);
+          height: calc(#{$width}*0.1);
+          content: "";
+          border-top: 1px solid $color;
+          border-right: 1px solid $color;
+          position: absolute;
+          top: 0;
+          right: 0;
+      }
+  }
+}
+// zamkniecie media dla desktop
+
+
+
+
+
+
+
 //  @extend .button;
 .button {
     cursor: pointer;

@@ -7,6 +7,7 @@
     margin: 0;
     padding-top: 10%;
     padding-bottom: 10%;
+    text-align: center;
     // width: 130%;
 }
 .logo_text {
@@ -102,7 +103,6 @@
     margin: 0 auto;
     text-align: center;
 }
-
 // .icons_arrange_center_mobile{
 //   padding-top: 10%;
 //   margin: 0 auto;
@@ -146,15 +146,14 @@
         margin: 0 auto;
         text-align: center;
     }
-    .icons_arrange_center_mobile{
-      padding-top: 10%;
-      margin: 0 auto;
-      text-align: center;
+    .icons_arrange_center_mobile {
+        padding-top: 10%;
+        margin: 0 auto;
+        text-align: center;
     }
 }
 //zamkniecie media dla mobile-desktop
 @media (min-width: $desktop) {
-
     .logo_text {
         .logo {
             margin-left: 30%;
@@ -188,7 +187,7 @@
         float: right;
         margin: 0 auto;
         text-align: center;
-          margin-left: 140px;
+        margin-left: 140px;
     }
     .nav_icon_arrange {
         padding-top: 200px;
