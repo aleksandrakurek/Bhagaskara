@@ -18,10 +18,12 @@ $(function() {
     }
     $('.nav-collapse').css({'display':'block'});
     menuVisible = true;
+
   });
-  $('.nav-collapse').click(function() {
-    $(this).css({'display':'none'});
-    menuVisible = false;
-  });
+  // $('.nav-collapse').click(function() {
+  //   $(this).css({'display':'none'});
+  //   menuVisible = false;
+	//
+  // });
 });
 });
