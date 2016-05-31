@@ -236,7 +236,6 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: normal;
   margin: 0;
   padding: 0;
   font-weight: 300;
@@ -1084,12 +1083,8 @@ body {
 }
 
 .person {
-  float: left;
   min-height: 500px;
   height: auto;
-  width: 30%;
-  margin: 1%;
-  padding-top: 150px;
   padding-bottom: 100px;
 }
 
@@ -1100,7 +1095,6 @@ body {
   height: 220px;
   position: relative;
   display: inline-block;
-  margin-left: 18%;
   background-color: #aaaaaa;
 }
 
@@ -1124,7 +1118,6 @@ body {
   border-radius: 50%;
   border: 1px solid #676767;
   display: inline-block;
-  margin-left: 20px;
   text-align: center;
   position: relative;
   font-size: 24px;
@@ -1135,8 +1128,6 @@ body {
 
 .person .icons {
   display: inline-block;
-  margin: 0 auto;
-  padding-left: 25%;
 }
 
 .nav_icons {
@@ -1158,6 +1149,42 @@ body {
 
 .nav_icon_r {
   background-position: -70px 0;
+}
+
+@media (max-width: 960px) {
+  #person2,
+  #person3 {
+    display: none;
+  }
+  .person {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .person .circle_mugshot {
+    margin: 0 auto;
+  }
+  .person .social_icon {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .person {
+    float: left;
+    width: 30%;
+    margin: 1%;
+    padding-top: 150px;
+  }
+  .person .circle_mugshot {
+    margin-left: 18%;
+  }
+  .person .social_icon {
+    margin-left: 20px;
+  }
+  .person .icons {
+    margin: 0 auto;
+    padding-left: 25%;
+  }
 }
 
 .main_section_team {
