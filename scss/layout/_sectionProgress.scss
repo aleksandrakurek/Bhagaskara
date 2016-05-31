@@ -1,7 +1,6 @@
 .main_section_team {
     width: 100%;
     height: auto;
-    min-height: 750px;
     margin: 0 auto;
     padding: 0;
 }
@@ -38,11 +37,44 @@
         height: 18px;
     }
     .progress_bars_2a {
-        float: left;
         position: relative;
     }
     .progress_bars_2b {
-        float: right;
         position: relative;
     }
 }
+@media (max-width:$desktop) {
+    .main_section_team {
+        min-height: 550px;
+    }
+    .progress_bars {
+        margin-left: 5%;
+        span {
+            margin-right: 5%;
+        }
+        progress {
+            width: 80%;
+        }
+        .progress_bars_2a {
+            position: relative;
+        }
+        .progress_bars_2b {
+            position: relative;
+        }
+    }
+}
+//zamkniecie media dla mobile-desktop
+@media (min-width: $desktop) {
+    .main_section_team {
+        min-height: 750px;
+    }
+    .progress_bars {
+        .progress_bars_2a {
+            float: left;
+        }
+        .progress_bars_2b {
+            float: right;
+        }
+    }
+}
+// zamkniecie media dla desktop

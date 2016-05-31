@@ -1190,7 +1190,6 @@ body {
 .main_section_team {
   width: 100%;
   height: auto;
-  min-height: 750px;
   margin: 0 auto;
   padding: 0;
 }
@@ -1236,13 +1235,44 @@ body {
 }
 
 .progress_bars .progress_bars_2a {
-  float: left;
   position: relative;
 }
 
 .progress_bars .progress_bars_2b {
-  float: right;
   position: relative;
+}
+
+@media (max-width: 960px) {
+  .main_section_team {
+    min-height: 550px;
+  }
+  .progress_bars {
+    margin-left: 5%;
+  }
+  .progress_bars span {
+    margin-right: 5%;
+  }
+  .progress_bars progress {
+    width: 80%;
+  }
+  .progress_bars .progress_bars_2a {
+    position: relative;
+  }
+  .progress_bars .progress_bars_2b {
+    position: relative;
+  }
+}
+
+@media (min-width: 960px) {
+  .main_section_team {
+    min-height: 750px;
+  }
+  .progress_bars .progress_bars_2a {
+    float: left;
+  }
+  .progress_bars .progress_bars_2b {
+    float: right;
+  }
 }
 
 .backgroundOurServices {
