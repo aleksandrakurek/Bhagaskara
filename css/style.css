@@ -106,7 +106,7 @@
     display: inline-block;
     padding: 5px;
     color: #676767;
-    font-size: 18px;
+    font-size: 24px;
   }
   .sectionTitle span .accent_color {
     color: #9f449b;
@@ -120,6 +120,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-left: 40px;
   }
   .sectionTitle span::after {
     width: calc(300px*0.1);
@@ -130,6 +131,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    margin-right: 60px;
   }
 }
 
@@ -774,52 +776,51 @@ body {
     font-weight: 300;
   }
   .section_item {
-    background: url("/images/shape1.svg") no-repeat top center;
     padding-top: 60%;
+    padding-bottom: 10%;
     display: inline-block;
     margin: 0 auto;
-    width: 85%;
-    height: 40%;
+    width: 200px;
+    height: 200px;
     position: relative;
   }
   .section_item::before {
-    background-repeat: no-repeat;
-    background-position: center;
     content: "";
     display: block;
     position: absolute;
-    margin-left: -30px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    width: 100%;
+    height: auto;
   }
   .section_item--heart::before {
-    background-image: url("/images/1.png");
-    width: 80px;
-    height: 80px;
-    top: 50px;
-    left: 47%;
+    background: url("/images/1.png") no-repeat 0px 0px;
   }
   .section_item--diamond::before {
-    background-image: url("/images/diamond.svg");
-    width: 80px;
-    height: 80px;
-    top: 50px;
-    left: 47%;
+    background: url("/images/2.png") no-repeat 0px 0px;
   }
   .section_item--cup::before {
-    background-image: url("/images/cup.svg");
-    width: 80px;
-    height: 80px;
-    top: 50px;
-    left: 47%;
+    background: url("/images/3.png") no-repeat 0px 0px;
   }
   .section_item--phone::before {
-    background-image: url("/images/phone.svg");
-    width: 80px;
-    height: 80px;
-    top: 50px;
-    left: 47%;
+    background: url("/images/4.png") no-repeat 0px 0px;
   }
-  .section_item:hover {
-    background-image: url("/images/shape4.svg");
+  .section_item--heart:hover {
+    background: url("/images/1.png") no-repeat 0px 0px;
+    position: static;
+  }
+  .section_item--diamond:hover {
+    background: url("/images/2hr.png") no-repeat 0px 0px;
+    position: static;
+  }
+  .section_item--cup:hover {
+    background: url("/images/3hr.png") no-repeat 0px 0px;
+    position: static;
+  }
+  .section_item--phone:hover {
+    background: url("/images/4hr.png") no-repeat 0px 0px;
+    position: static;
   }
 }
 
