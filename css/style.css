@@ -1028,6 +1028,7 @@ body {
   position: relative;
   display: inline-block;
   background-color: #aaaaaa;
+  text-align: center;
 }
 
 .person h3 {
@@ -1036,11 +1037,13 @@ body {
   color: black;
   text-transform: uppercase;
   font-size: 24px;
+  text-align: center;
 }
 
 .person p {
   color: #676767;
   font-size: 18px;
+  text-align: center;
 }
 
 .person .social_icon {
