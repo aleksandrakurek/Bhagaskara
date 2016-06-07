@@ -134,21 +134,30 @@
   }
   .portfolio_watch_button {
       padding-bottom: 100px;
+      text-align: center;
+      padding-top: 50px;
       button {
-        cursor: pointer;
-        background-color: $color;
-        color: $text-color;
-        font-size: $font-size-m;
+        background: $color;
+        border-bottom: solid 5px #6B2E68;
+        border-radius: 7px;
         padding-top: 22px;
         padding-bottom: 22px;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-        margin-top: -4px;
-        font-weight: normal;
-        border-radius: 8px;
-        border: 0;
-        box-shadow: 0 6px 0 0 #6b2e68;
+        text-align: center;
+        font-size: $font-size-m;
+        text-decoration: none;
+        color: $text-color;
+        display: block;
+        width: 220px;
+        margin: 0 auto;
+        transition: background-color .3s linear, border .2s linear;
+      }
+      button:hover {
+      	color: #6B2E68;
+      	background: #FFF;
+      	border-top: solid 5px #6B2E68;
+      	border-bottom: solid 2px #6B2E68;
+      	border-left: solid 2px #6B2E68;
+      	border-right: solid 2px #6B2E68;
       }
   }
 }
