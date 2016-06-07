@@ -30,7 +30,6 @@ $(function() {
 
 //sticky menu
 $(window).on("scroll",function(){
-	console.log('działa');
 
 	var topWindow = $(window).scrollTop();
 	var topDiv = $("#sticky-div").offset().top;
@@ -39,5 +38,5 @@ $(window).on("scroll",function(){
 		$("#sticky").addClass("positionTop");
 	} else {
 		$("#sticky").removeClass("positionTop");
-	};
+	}
 });

@@ -1254,7 +1254,7 @@ body {
 
 @media (min-width: 960px) {
   .backgroundOurServices {
-    background: url("/images/background_section.png") no-repeat;
+    background: url("/images/background_section.png") repeat fixed 100%;
     background-size: cover;
     background-position: center;
     min-height: 625px;

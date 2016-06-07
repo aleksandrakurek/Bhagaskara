@@ -1,145 +1,146 @@
 @media (max-width: $mobile) {
-  .backgroundOurServices {
-      background: url("/images/background_section.png") no-repeat;
-      background-size: cover;
-      background-position: center;
-      min-height: 625px;
-      text-align: center;
-      padding-top: 150px;
-      p {
-          margin-top: -50px;
-          text-align: center;
-          line-height: 50px;
-          font-size: $font-size-m;
-          color: $text-color;
-          width: 100%;
-          margin: 0; // lub padding-bottom:1px dla klasy backgroundOurServices
-      }
-  }
-  .section_item_serv {
-      background: url("/images/shape1.svg") no-repeat top center;
-      display: inline-block;
-      margin: 0 auto;
-      width: 166px;
-      height: 166px;
-      position: relative;
-      padding-top: 240px;
-      &::before {
-          background-repeat: no-repeat;
-          background-position: center;
-          content: "";
-          display: block;
-          width: 80px;
-          height: 80px;
-          position: absolute;
-          left: 50%;
-      }
-  }
-  .section_item--bubble_serv {
-      &::before {
-          background-image: url("/images/bubble.svg");
-          width: 80px;
-          height: 80px;
-          top: 15%;
-          margin-left: -40px;
-      }
-  }
+    .backgroundOurServices {
+        background: url("/images/background_section.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 625px;
+        text-align: center;
+        padding-top: 150px;
+        p {
+            margin-top: -50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: $font-size-m;
+            color: $text-color;
+            width: 100%;
+            margin: 0; // lub padding-bottom:1px dla klasy backgroundOurServices
+        }
+    }
+    .section_item_serv {
+        background: url("/images/shape1.svg") no-repeat top center;
+        display: inline-block;
+        margin: 0 auto;
+        width: 166px;
+        height: 166px;
+        position: relative;
+        padding-top: 240px;
+        &::before {
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+            display: block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+        }
+    }
+    .section_item--bubble_serv {
+        &::before {
+            background-image: url("/images/bubble.svg");
+            width: 80px;
+            height: 80px;
+            top: 15%;
+            margin-left: -40px;
+        }
+    }
 }
 //zamkniecie media dla mobile
 @media (min-width: $mobile) and (max-width:$desktop) {
-      .backgroundOurServices {
-          background: url("/images/background_section.png") no-repeat;
+    .backgroundOurServices {
+        background: url("/images/background_section.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 625px;
+        text-align: center;
+        padding-top: 150px;
+        p {
+            margin-top: -50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: $font-size-l;
+            color: $text-color;
+            width: 100%;
+            margin: 0; // lub padding-bottom:1px dla klasy backgroundOurServices
+        }
+    }
+    .section_item_serv {
+        background: url("/images/shape1.svg") no-repeat top center;
+        display: inline-block;
+        margin: 0 auto;
+        width: 166px;
+        height: 166px;
+        position: relative;
+        padding-top: 300px;
+        &::before {
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+            display: block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+        }
+    }
+    .section_item--bubble_serv {
+        &::before {
+            background-image: url("/images/bubble.svg");
+            width: 80px;
+            height: 80px;
+            top: 15%;
+            margin-left: -40px;
+        }
+    }
+}
+//zamkniecie media dla mobile-desktop
+@media (min-width: $desktop) {
+
+
+    .backgroundOurServices {
+      background: url("/images/background_section.png") repeat fixed 100%;
           background-size: cover;
           background-position: center;
           min-height: 625px;
           text-align: center;
           padding-top: 150px;
-          p {
-              margin-top: -50px;
-              text-align: center;
-              line-height: 50px;
-              font-size: $font-size-l;
-              color: $text-color;
-              width: 100%;
-              margin: 0; // lub padding-bottom:1px dla klasy backgroundOurServices
-          }
-      }
-      .section_item_serv {
-          background: url("/images/shape1.svg") no-repeat top center;
-          display: inline-block;
-          margin: 0 auto;
-          width: 166px;
-          height: 166px;
-          position: relative;
-          padding-top: 300px;
-          &::before {
-              background-repeat: no-repeat;
-              background-position: center;
-              content: "";
-              display: block;
-              width: 80px;
-              height: 80px;
-              position: absolute;
-              left: 50%;
-          }
-      }
-      .section_item--bubble_serv {
-          &::before {
-              background-image: url("/images/bubble.svg");
-              width: 80px;
-              height: 80px;
-              top: 15%;
-              margin-left: -40px;
-          }
-      }
-}
-//zamkniecie media dla mobile-desktop
-@media (min-width: $desktop) {
 
-  .backgroundOurServices {
-      background: url("/images/background_section.png") no-repeat;
-      background-size: cover;
-      background-position: center;
-      min-height: 625px;
-      text-align: center;
-      padding-top: 150px;
-      p {
-          margin-top: -50px;
-          text-align: center;
-          line-height: 50px;
-          font-size: $font-size-l;
-          color: $text-color;
-          width: 100%;
-          margin: 0; // lub padding-bottom:1px dla klasy backgroundOurServices
-      }
-  }
-  .section_item_serv {
-      background: url("/images/shape1.svg") no-repeat top center;
-      display: inline-block;
-      margin: 0 auto;
-      width: 166px;
-      height: 166px;
-      position: relative;
-      padding-top: 300px;
-      &::before {
-          background-repeat: no-repeat;
-          background-position: center;
-          content: "";
-          display: block;
-          width: 80px;
-          height: 80px;
-          position: absolute;
-          left: 50%;
-      }
-  }
-  .section_item--bubble_serv {
-      &::before {
-          background-image: url("/images/bubble.svg");
-          width: 80px;
-          height: 80px;
-          top: 15%;
-          margin-left: -40px;
-      }
-  }
-
+        p {
+            margin-top: -50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: $font-size-l;
+            color: $text-color;
+            width: 100%;
+            margin: 0; // lub padding-bottom:1px dla klasy backgroundOurServices
+        }
+    }
+    .section_item_serv {
+        background: url("/images/shape1.svg") no-repeat top center;
+        display: inline-block;
+        margin: 0 auto;
+        width: 166px;
+        height: 166px;
+        position: relative;
+        padding-top: 300px;
+        &::before {
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+            display: block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+        }
+    }
+    .section_item--bubble_serv {
+        &::before {
+            background-image: url("/images/bubble.svg");
+            width: 80px;
+            height: 80px;
+            top: 15%;
+            margin-left: -40px;
+        }
+    }
 }
