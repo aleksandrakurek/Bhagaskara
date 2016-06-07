@@ -95,16 +95,13 @@
 }
 //zamkniecie media dla mobile-desktop
 @media (min-width: $desktop) {
-
-
     .backgroundOurServices {
-      background: url("/images/background_section.png") repeat fixed 100%;
-          background-size: cover;
-          background-position: center;
-          min-height: 625px;
-          text-align: center;
-          padding-top: 150px;
-
+        background: url("/images/background_section.png") repeat fixed 100%;
+        background-size: cover;
+        background-position: center;
+        min-height: 625px;
+        text-align: center;
+        padding-top: 150px;
         p {
             margin-top: -50px;
             text-align: center;
