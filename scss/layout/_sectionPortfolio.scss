@@ -138,7 +138,7 @@
       padding-top: 50px;
       button {
         background: $color;
-        border-bottom: solid 5px #6B2E68;
+        border-bottom: solid 5px $border-color;
         border-radius: 7px;
         padding-top: 22px;
         padding-bottom: 22px;
@@ -152,12 +152,12 @@
         transition: background-color .3s linear, border .2s linear;
       }
       button:hover {
-      	color: #6B2E68;
+      	color: $border-color;
       	background: #FFF;
-      	border-top: solid 5px #6B2E68;
-      	border-bottom: solid 2px #6B2E68;
-      	border-left: solid 2px #6B2E68;
-      	border-right: solid 2px #6B2E68;
+      	border-top: solid 5px $border-color;
+      	border-bottom: solid 2px $border-color;
+      	border-left: solid 2px $border-color;
+      	border-right: solid 2px $border-color;
       }
   }
 }
