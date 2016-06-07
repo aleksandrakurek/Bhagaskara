@@ -34,6 +34,8 @@
         }
     }
 
+
+
   }
   // zamkniecie media dla mobile-desktop
   @media (min-width: $desktop) {
@@ -118,7 +120,14 @@
       width: 220px;
       margin: 0 auto;
       transition: background-color .3s linear, border .2s linear;
+      // float: left;
+    }
+    #contact_btn{
       float: left;
+    }
+    #about_us_btn{
+      float: left;
+      margin-left: 45px;
     }
     button:hover {
       color: $border-color;
@@ -147,7 +156,7 @@
         }
     }
     .contact_icons {
-        text-align: center;
+        text-align: left;
         position: relative;
     }
     .contact_social_icon {
@@ -163,6 +172,7 @@
         font-weight: light;
         text-decoration: none;
         color: $font-color;
+        text-align: center;
     }
     .section_contact {
         .logo {

@@ -55,29 +55,29 @@
       //     text-align: center;
       // }
 
-      button {
-        background: $color;
-        border-bottom: solid 5px $border-color;
-        border-radius: 7px;
-        padding-top: 22px;
-        padding-bottom: 22px;
-        text-align: center;
-        font-size: $font-size-m;
-        text-decoration: none;
-        color: $text-color;
-        display: block;
-        width: 220px;
-        margin: 0 auto;
-        transition: background-color .3s linear, border .2s linear;
-      }
-      button:hover {
-        color: $border-color;
-        background: #FFF;
-        border-top: solid 5px $border-color;
-        border-bottom: solid 2px $border-color;
-        border-left: solid 2px $border-color;
-        border-right: solid 2px $border-color;
-      }
+      // button {
+      //   background: $color;
+      //   border-bottom: solid 5px $border-color;
+      //   border-radius: 7px;
+      //   padding-top: 22px;
+      //   padding-bottom: 22px;
+      //   text-align: center;
+      //   font-size: $font-size-m;
+      //   text-decoration: none;
+      //   color: $text-color;
+      //   display: block;
+      //   width: 220px;
+      //   margin: 0 auto;
+      //   transition: background-color .3s linear, border .2s linear;
+      // }
+      // button:hover {
+      //   color: $border-color;
+      //   background: #FFF;
+      //   border-top: solid 5px $border-color;
+      //   border-bottom: solid 2px $border-color;
+      //   border-left: solid 2px $border-color;
+      //   border-right: solid 2px $border-color;
+      // }
 
     }
   }
@@ -118,7 +118,11 @@
             padding-left: 10%;
         }
         div {
-            text-align: center;
+            // text-align: center;
+    #about_us_btn{
+      float: left;
+    }
+
         // button {
         //     cursor: pointer;
         //     background-color: $color;
@@ -142,29 +146,29 @@
         //     margin: 0 auto;
         //     text-align: center;
         // }
-        button {
-          background: $color;
-          border-bottom: solid 5px $border-color;
-          border-radius: 7px;
-          padding-top: 22px;
-          padding-bottom: 22px;
-          text-align: center;
-          font-size: $font-size-m;
-          text-decoration: none;
-          color: $text-color;
-          display: block;
-          width: 220px;
-          margin: 0 auto;
-          transition: background-color .3s linear, border .2s linear;
-        }
-        button:hover {
-          color: $border-color;
-          background: #FFF;
-          border-top: solid 5px $border-color;
-          border-bottom: solid 2px $border-color;
-          border-left: solid 2px $border-color;
-          border-right: solid 2px $border-color;
-        }
+        // button {
+        //   background: $color;
+        //   border-bottom: solid 5px $border-color;
+        //   border-radius: 7px;
+        //   padding-top: 22px;
+        //   padding-bottom: 22px;
+        //   text-align: center;
+        //   font-size: $font-size-m;
+        //   text-decoration: none;
+        //   color: $text-color;
+        //   display: block;
+        //   width: 220px;
+        //   margin: 0 auto;
+        //   transition: background-color .3s linear, border .2s linear;
+        // }
+        // button:hover {
+        //   color: $border-color;
+        //   background: #FFF;
+        //   border-top: solid 5px $border-color;
+        //   border-bottom: solid 2px $border-color;
+        //   border-left: solid 2px $border-color;
+        //   border-right: solid 2px $border-color;
+        // }
       }
     }
 }
@@ -217,29 +221,29 @@
         //     padding: 20px;
         //     margin-left: 50px;
         // }
-        button {
-          background: $color;
-          border-bottom: solid 5px $border-color;
-          border-radius: 7px;
-          padding-top: 22px;
-          padding-bottom: 22px;
-          text-align: center;
-          font-size: $font-size-m;
-          text-decoration: none;
-          color: $text-color;
-          display: block;
-          width: 220px;
-          margin: 0 auto;
-          transition: background-color .3s linear, border .2s linear;
-        }
-        button:hover {
-          color: $border-color;
-          background: #FFF;
-          border-top: solid 5px $border-color;
-          border-bottom: solid 2px $border-color;
-          border-left: solid 2px $border-color;
-          border-right: solid 2px $border-color;
-        }
+        // button {
+        //   background: $color;
+        //   border-bottom: solid 5px $border-color;
+        //   border-radius: 7px;
+        //   padding-top: 22px;
+        //   padding-bottom: 22px;
+        //   text-align: center;
+        //   font-size: $font-size-m;
+        //   text-decoration: none;
+        //   color: $text-color;
+        //   display: block;
+        //   width: 220px;
+        //   margin: 0 auto;
+        //   transition: background-color .3s linear, border .2s linear;
+        // }
+        // button:hover {
+        //   color: $border-color;
+        //   background: #FFF;
+        //   border-top: solid 5px $border-color;
+        //   border-bottom: solid 2px $border-color;
+        //   border-left: solid 2px $border-color;
+        //   border-right: solid 2px $border-color;
+        // }
     }
 }
 // zamkniecie media dla desktop

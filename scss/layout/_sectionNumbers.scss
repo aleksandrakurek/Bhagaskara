@@ -4,10 +4,14 @@
     text-align: center;
     min-height: 900px;
     background-color: $section-background-color;
-}
 
+}
+.section_numbers_border{
+  border-bottom: 45px solid white;
+}
 .number_items {
     display: inline-block;
+
     h1,
     p {
         color: $diffrent-text-color;

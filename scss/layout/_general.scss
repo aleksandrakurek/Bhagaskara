@@ -138,11 +138,13 @@ $base-col: 100%/$col-number;
         text-align: center;
         line-height: 50px;
         margin: 10% auto 0;
+          font-weight: 300;
         span {
             display: inline-block;
             padding: 5px;
             color: $diffrent-text-color;
             font-size: $font-size-l;
+            font-weight: 300;
             .accent_color {
                 color: $color;
             }
