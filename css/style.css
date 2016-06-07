@@ -964,10 +964,24 @@ body {
   margin-left: -40px;
 }
 
+.slider ul {
+  list-style: none;
+}
+
+.slider li {
+  display: none;
+}
+
+.slider .visible {
+  display: inline-block;
+}
+
 .person {
   min-height: 500px;
   height: auto;
   padding-bottom: 100px;
+  min-width: 300px;
+  border: 1px solid hotpink;
 }
 
 .person #img_person1 {
@@ -990,7 +1004,7 @@ body {
 
 .person .circle_mugshot {
   border-radius: 50%;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #ffffff;
   width: 220px;
   height: 220px;
   position: relative;

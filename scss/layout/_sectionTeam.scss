@@ -1,8 +1,22 @@
+.slider {
+    ul {
+        list-style: none;
+    }
+    li {
+        display: none;
+    }
+    .visible {
+        display: inline-block;
+    }
+}
 .person {
     min-height: 500px;
     height: auto;
     padding-bottom: 100px;
+    min-width: 300px;
     // text-align: center;
+    border:1px solid hotpink;
+
     #img_person1 {
         background-image: url("/images/person1.png");
         background-position: center;
@@ -20,7 +34,7 @@
     }
     .circle_mugshot {
         border-radius: 50%;
-        border: 1px solid $circle-color;
+        border: 1px solid $text-color;
         width: 220px;
         height: 220px;
         position: relative;
