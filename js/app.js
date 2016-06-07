@@ -1,5 +1,3 @@
-
-
 // Hamburger menu
 $(document).ready(function(){
 	$("#hmb_menu").click(function(){
@@ -30,6 +28,7 @@ $(function() {
 
 //sticky menu
 $(window).on("scroll",function(){
+	console.log('działa');
 
 	var topWindow = $(window).scrollTop();
 	var topDiv = $("#sticky-div").offset().top;

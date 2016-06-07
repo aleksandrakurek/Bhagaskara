@@ -970,6 +970,24 @@ body {
   padding-bottom: 100px;
 }
 
+.person #img_person1 {
+  background-image: url("/images/person1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.person #img_person2 {
+  background-image: url("/images/person3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.person #img_person3 {
+  background-image: url("/images/person5.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .person .circle_mugshot {
   border-radius: 50%;
   border: 1px solid #aaaaaa;
@@ -977,7 +995,6 @@ body {
   height: 220px;
   position: relative;
   display: inline-block;
-  background-color: #aaaaaa;
   text-align: center;
 }
 
