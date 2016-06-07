@@ -1,4 +1,4 @@
-console.log('działa')
+
 
 // Hamburger menu
 $(document).ready(function(){
@@ -26,4 +26,18 @@ $(function() {
 	//
   // });
 });
+});
+
+//sticky menu
+$(window).on("scroll",function(){
+	console.log('działa');
+
+	var topWindow = $(window).scrollTop();
+	var topDiv = $("#sticky-div").offset().top;
+
+	if(topWindow > topDiv){
+		$("#sticky").addClass("positionTop");
+	} else {
+		$("#sticky").removeClass("positionTop");
+	};
 });

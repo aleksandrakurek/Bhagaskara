@@ -639,6 +639,17 @@ body {
 }
 
 @media (min-width: 960px) {
+  #sticky {
+    margin-top: 0;
+    background: #ffffff;
+  }
+  .positionTop {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
   .nav-collapse {
     float: right;
   }
