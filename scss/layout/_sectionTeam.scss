@@ -1,34 +1,49 @@
-.slider {
-    ul {
-        list-style: none;
-    }
-    li {
-        display: none;
-    }
-    .visible {
-        display: inline-block;
-    }
+.slider{
+  margin: 0 auto;
+  width: 900px;
+  overflow: hidden;
+  font-size: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  li {
+    display: inline-block;
+    width: 300px;
+  }
 }
+
 .person {
     min-height: 500px;
     height: auto;
     padding-bottom: 100px;
     min-width: 300px;
+    padding-left: 20px;
     // text-align: center;
-    border:1px solid hotpink;
-
+    border: 1px solid hotpink;
     #img_person1 {
         background-image: url("/images/person1.png");
         background-position: center;
         background-size: cover;
     }
     #img_person2 {
-        background-image: url("/images/person3.png");
+        background-image: url("/images/person2.png");
         background-position: center;
         background-size: cover;
     }
     #img_person3 {
-        background-image: url("/images/person5.png");
+        background-image: url("/images/person1.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #img_person4 {
+        background-image: url("/images/person2.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #img_person5 {
+        background-image: url("/images/person1.png");
         background-position: center;
         background-size: cover;
     }
