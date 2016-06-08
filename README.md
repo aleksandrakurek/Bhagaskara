@@ -10,7 +10,7 @@ So far:
  - hamburger menu,
  - sticky menu,
  - slider,
- - gallery (...i'm working on it :) i'm using jQuery plugin fancyBox https://github.com/fancyapps/fancyBox,
+ - gallery (...i'm currently working at this one :). I'm using here jQuery plugin fancyBox https://github.com/fancyapps/fancyBox.
 
 
 
