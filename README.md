@@ -1,13 +1,25 @@
-Work in progress :) Pls come back in short time- I'm going to finish it soon! 
+8.06.2016
 
-Fully responsive site based on .psd . 
+Work in progress :) Pls come back in short time- I'm going to finish it soon!
+
+So far:
+
+ - CSS parallax effect,
+
+ jQuery:
+ - hamburger menu,
+ - sticky menu,
+ - slider,
+ - gallery (...i'm working on it :) i'm using jQuery plugin fancyBox https://github.com/fancyapps/fancyBox,
+
+
+
+Fully responsive site based on .psd.
 
 - HTML5
 - CSS3
-- JS 
+- JS
 - jQuery
 - SASS
 - RWD
 - Gulp
-
- 
