@@ -162,3 +162,56 @@
   }
 }
 // zamkniecie media dla desktop
+.images-hidden {
+  display: none;
+}
+
+.all_buttons_portfolio {
+  flex-wrap: wrap;
+}
+
+.portfolio_buttons {
+  border-radius: 3px;
+  background: none;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  text-transform: uppercase;
+  flex: 0.5 45%;
+  margin: 2px;
+}
+
+.portfolio_buttons:hover {
+  background: #9f449b;
+  border: 1px solid #9f449b;
+  color: #fff;
+}
+
+// .img_descr_item img {
+//   z-index: 10;
+// }
+
+// .img_descr_item img:not(.fullScreen) {
+//   display: block;
+//   width: 100%;
+// }
+
+// .img_descr_item img:not(.fullScreen):hover {
+//   opacity: 0.5;
+//   transform: scale(1.3);
+// }
+
+// .img-background:hover {
+//   background: #565d67;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .fullScreen {
+//   position: fixed;
+//   width: 95% !important;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   border-radius: 10px;
+// }
