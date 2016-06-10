@@ -177,6 +177,58 @@ function miniSlider() {
 
 
 // Gallery filter
+
+// $(document).ready(function(){
+// console.log("dziala");
+// var portfolioMenu = $(".images img");
+//
+// portfolioMenu.on('click', function(){
+//   console.log("click dziala");
+//     var data = $(this).data("tag");
+//     $(".images .showPic:visible").hide();
+//     $(".images .showPic."+ data).show();
+//     event.preventDefault();
+// });
+// });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+            var images = document.querySelectorAll(".images img"); // tablica
+            var showButton = document.getElementById("showButton");
+            var hideButton = document.getElementById("hideButton");
+            // var input = document.getElementById("tagInput");
+
+
+            showButton.addEventListener("click", function(event) { // eventy na klikniecie
+                    // var tagInput = input.value;
+                    for (i = 0; i < images.length; i++) { // wypisuje wszystkie tagi dla obrazkow
+                        var tag = images[i].dataset.tag;
+                        if (tag.indexOf(tagInput) != -1) {
+                            images[i].classList.remove("invisible");
+                        }
+                      }
+
+                        tagInput = ""; // czysci tekst w inpucie
+                    });
+
+
+
+                hideButton.addEventListener("click", function(event) {
+                    var tagInput = input.value;
+                    for (i = 0; i < images.length; i++) {
+                        var tag = images[i].dataset.tag;
+                        if (tag.indexOf(tagInput) != -1) {
+                            images[i].classList.add("invisible");
+                        }
+
+                    }
+
+                    tagInput = "";
+                });
+                    });
+
+
+
 $(function() {
     var galleryButtons = $(".portfolio_buttons");
     var galleryImages = $(".img_descr_item").find("img");
@@ -184,6 +236,9 @@ $(function() {
 
     galleryButtons.on("click", function() {
         var galleryBtnTag = $(this).data("tag");
+        console.log(galleryBtnTag);
+
+
         event.preventDefault();
         if ($(this).index() === 0) {
             galleryImages.removeClass("hide");
@@ -204,7 +259,6 @@ $(function() {
     var hiddenImages = $(".images-hidden");
 
     watchMoreBtn.on("click", function() {
-        console.log("dziala");
         event.preventDefault();
         hiddenImages.toggle();
 

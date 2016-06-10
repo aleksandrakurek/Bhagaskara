@@ -1598,7 +1598,7 @@ body {
   }
 }
 
-.images-hidden {
+.images-hidden, .invisible {
   display: none;
 }
 

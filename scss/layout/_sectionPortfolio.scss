@@ -162,9 +162,10 @@
   }
 }
 // zamkniecie media dla desktop
-.images-hidden {
+.images-hidden, .invisible {
   display: none;
 }
+
 
 .all_buttons_portfolio {
   flex-wrap: wrap;
@@ -186,6 +187,7 @@
   border: 1px solid #9f449b;
   color: #fff;
 }
+
 
 // .img_descr_item img {
 //   z-index: 10;
