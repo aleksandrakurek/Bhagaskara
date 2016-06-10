@@ -1,17 +1,16 @@
+//Numbers section
 .numbers {
     margin: 0 auto;
     padding: 175px 0 0;
     text-align: center;
     min-height: 900px;
     background-color: $section-background-color;
-
 }
-.section_numbers_border{
-  border-bottom: 45px solid white;
+.section_numbers_border {
+    border-bottom: 45px solid white;
 }
 .number_items {
     display: inline-block;
-
     h1,
     p {
         color: $diffrent-text-color;
@@ -26,30 +25,60 @@
         font-size: $font-size-xs;
         margin-top: -45px;
     }
-
 }
 
-.numbers_circle {
-    border-radius: 50%;
-    border: 1px solid $circle-color;
-    width: 170px;
-    height: 170px;
-    position: relative;
-    display: inline-block;
+
+// Mini-slider section
+.minislider {
+    margin: 0 auto;
+    width: 500px;
+    overflow: hidden;
+    font-size: 0;
+    padding: 50px 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+    }
+    li {
+        display: inline-block;
+        width: 500px;
+        height: 600px;
+    }
+    div {
+        display: inline-block;
+    }
+    img {
+        border-radius: 50%;
+    }
+    p {
+        // margin: 5px 0;
+        line-height: 1.4;
+        margin-top: 50px;
+        font-size: 33px;
+        color: $font-color;
+    }
+    .autor {
+        margin-top: 50px;
+        font-size: $font-size-m;
+        text-transform: uppercase;
+        color: $font-color;
+    }
+}
+.minislider_btns {
+    margin: 5px 0;
+    padding: 0 5px;
+    span {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid $circle-color;
+    }
+}
+.active_minislider_btn {
     background: $circle-color;
-    margin-top:100px;
-    // margin-left: 18%;
-}
-
-.quotation{
-margin-top:50px;
-  font-size: 33px;
-  color: $font-color;
-}
-
-#quotation_autor{
-  margin-top:50px;
-  font-size: $font-size-m;
-  text-transform: uppercase;
-  color: $font-color;
 }
