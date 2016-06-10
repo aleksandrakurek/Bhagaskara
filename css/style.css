@@ -648,7 +648,7 @@ body {
     z-index: 10000;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 110px;
   }
   .nav-collapse {
     float: right;
@@ -1107,7 +1107,7 @@ body {
     float: left;
     width: 30%;
     margin: 1%;
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .person .circle_mugshot {
     margin-left: 18%;
@@ -1380,28 +1380,65 @@ body {
   margin-top: -45px;
 }
 
-.numbers_circle {
-  border-radius: 50%;
-  border: 1px solid #aaaaaa;
-  width: 170px;
-  height: 170px;
-  position: relative;
-  display: inline-block;
-  background: #aaaaaa;
-  margin-top: 100px;
+.minislider {
+  margin: 0 auto;
+  width: 500px;
+  overflow: hidden;
+  font-size: 0;
+  padding: 50px 0;
 }
 
-.quotation {
+.minislider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.minislider li {
+  display: inline-block;
+  width: 500px;
+  height: 600px;
+}
+
+.minislider div {
+  display: inline-block;
+}
+
+.minislider img {
+  border-radius: 50%;
+}
+
+.minislider p {
+  line-height: 1.4;
   margin-top: 50px;
   font-size: 33px;
   color: black;
 }
 
-#quotation_autor {
+.minislider .autor {
   margin-top: 50px;
   font-size: 24px;
   text-transform: uppercase;
   color: black;
+}
+
+.minislider_btns {
+  margin: 5px 0;
+  padding: 0 5px;
+}
+
+.minislider_btns span {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #aaaaaa;
+}
+
+.active_minislider_btn {
+  background: #aaaaaa;
 }
 
 @media (min-width: 320px) and (max-width: 960px) {
@@ -1559,6 +1596,31 @@ body {
     border-left: solid 2px #6B2E68;
     border-right: solid 2px #6B2E68;
   }
+}
+
+.images-hidden {
+  display: none;
+}
+
+.all_buttons_portfolio {
+  flex-wrap: wrap;
+}
+
+.portfolio_buttons {
+  border-radius: 3px;
+  background: none;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  text-transform: uppercase;
+  flex: 0.5 45%;
+  margin: 2px;
+}
+
+.portfolio_buttons:hover {
+  background: #9f449b;
+  border: 1px solid #9f449b;
+  color: #fff;
 }
 
 @media (max-width: 960px) {
