@@ -9,6 +9,10 @@
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="fancybox/jquery.fancybox.js" type="text/javascript"></script>
+
+
+
 </head>
 
 <body>
@@ -438,45 +442,45 @@
             <h2 class="sectionTitle col_12"><span>Our<span class="accent_color"> portfolio</span></span></h2>
 
             <div class="all_buttons_portfolio">
-                <button data-tag="web, apps, icons" class="portfolio_buttons">All</button>
-                <button data-tag="web" class="portfolio_buttons">Web</button>
-                <button data-tag="apps" class="portfolio_buttons">Apps</button>
-                <button data-tag="icons" class="portfolio_buttons">Icons</button>
+                <button data-rel="all" class="portfolio_buttons filter active">All</button>
+                <button data-rel="web" class="portfolio_buttons filter">Web</button>
+                <button data-rel="apps" class="portfolio_buttons filter">Apps</button>
+                <button data-rel="icons" class="portfolio_buttons filter">Icons</button>
             </div>
 
             <div class="images">
 
-                <div data-tag="web,icons" class="img_descr_item showPic">
+                <div data-filter="web, icons"  data-fancybox-group="gallery" class="img_descr_item showPic fancybox">
                     <img src="/images/tumblr_n2k1499dIp1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="icons" class="img_descr_item">
+                <div data-filter="icons"  data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web,apps" class="img_descr_item">
+                <div data-filter="web, apps"  data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k114hDQX1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web" class="img_descr_item">
+                <div data-filter="web"  data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k10foRBd1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web,icons" class="img_descr_item">
+                <div data-filter="web, icons"  data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web,icons,apps" class="img_descr_item">
+                <div data-filter="web, icons, apps" data-fancybox-group="gallery"  data-fancybox-group="gallery"  class="img_descr_item fancybox">
                     <img src="/images/tumblr_n1ipqbCLKd1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
@@ -485,37 +489,37 @@
 
             <div class="images images-hidden">
 
-                <div data-tag="web,icons" class="img_descr_item showPic">
+                <div data-filter="web, icons"  data-fancybox-group="gallery" class="img_descr_item showPic fancybox">
                     <img src="/images/tumblr_n2k1499dIp1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="icons" class="img_descr_item">
+                <div data-filter="icons" data-fancybox-group="gallery"  class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web,apps" class="img_descr_item">
+                <div data-filter="web, apps" data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k114hDQX1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web" class="img_descr_item">
+                <div data-filter="web" data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k10foRBd1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web,icons" class="img_descr_item">
+                <div data-filter="web, icons" data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
                 </div>
 
-                <div data-tag="web,icons,apps" class="img_descr_item">
+                <div data-filter="web, icons, apps" data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n1ipqbCLKd1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>apps, icons, ui</p>
