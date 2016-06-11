@@ -196,7 +196,7 @@ function miniSlider() {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
     // var images = document.querySelectorAll(".images img"); // tablica
     // var showButton = document.getElementById("showButton");
     // var hideButton = document.getElementById("hideButton");
@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         });
     });
-});
+// });
 
 //Form check
 
