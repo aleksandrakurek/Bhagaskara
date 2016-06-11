@@ -66,36 +66,36 @@ $(function() {
             }, 1000);
         }
     });
-//
+    //
 
-//ProgressBars
+    //ProgressBars
 
-// nie dziala :(
+    // nie dziala :(
 
-// $(function() {
-//     $(".progress_bar").each(function() {
-//         $this = $(this);
-//         var $progressBarTitle = $this.prev().find("h4");
-//         console.log($progressBarTitle);
-//         var $bar = $this;
-//         var percent = $bar[0].value;
-//
-//         $progressBarTitle.text("0%");
-//         $bar.attr("value:0");
-//
-//         $this.on("inview", function() {
-//             $bar.animate({
-//                 width: percent
-//             }, {
-//                 duration: 1500,
-//                 step: function(now) {
-//                     $progressBarTitle.text(Math.round(now) + "%");
-//                 }
-//             });
-//         });
-//     });
-// });
- });
+    // $(function() {
+    //     $(".progress_bar").each(function() {
+    //         $this = $(this);
+    //         var $progressBarTitle = $this.prev().find("h4");
+    //         console.log($progressBarTitle);
+    //         var $bar = $this;
+    //         var percent = $bar[0].value;
+    //
+    //         $progressBarTitle.text("0%");
+    //         $bar.attr("value:0");
+    //
+    //         $this.on("inview", function() {
+    //             $bar.animate({
+    //                 width: percent
+    //             }, {
+    //                 duration: 1500,
+    //                 step: function(now) {
+    //                     $progressBarTitle.text(Math.round(now) + "%");
+    //                 }
+    //             });
+    //         });
+    //     });
+    // });
+});
 //Animated Number counter
 
 // $(window).on("scroll", function(){
@@ -197,91 +197,126 @@ function miniSlider() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-            // var images = document.querySelectorAll(".images img"); // tablica
-            // var showButton = document.getElementById("showButton");
-            // var hideButton = document.getElementById("hideButton");
-            // // var input = document.getElementById("tagInput");
-            //
-            //
-            // showButton.addEventListener("click", function(event) { // eventy na klikniecie
-            //         // var tagInput = input.value;
-            //         for (i = 0; i < images.length; i++) { // wypisuje wszystkie tagi dla obrazkow
-            //             var tag = images[i].dataset.tag;
-            //             if (tag.indexOf(tagInput) != -1) {
-            //                 images[i].classList.remove("invisible");
-            //             }
-            //           }
-            //
-            //             tagInput = ""; // czysci tekst w inpucie
-            //         });
-            //
-            //
-            //
-            //     hideButton.addEventListener("click", function(event) {
-            //         var tagInput = input.value;
-            //         for (i = 0; i < images.length; i++) {
-            //             var tag = images[i].dataset.tag;
-            //             if (tag.indexOf(tagInput) != -1) {
-            //                 images[i].classList.add("invisible");
-            //             }
-            //
-            //         }
-            //
-            //         tagInput = "";
-            //     });
-            //         });
+    // var images = document.querySelectorAll(".images img"); // tablica
+    // var showButton = document.getElementById("showButton");
+    // var hideButton = document.getElementById("hideButton");
+    // // var input = document.getElementById("tagInput");
+    //
+    //
+    // showButton.addEventListener("click", function(event) { // eventy na klikniecie
+    //         // var tagInput = input.value;
+    //         for (i = 0; i < images.length; i++) { // wypisuje wszystkie tagi dla obrazkow
+    //             var tag = images[i].dataset.tag;
+    //             if (tag.indexOf(tagInput) != -1) {
+    //                 images[i].classList.remove("invisible");
+    //             }
+    //           }
+    //
+    //             tagInput = ""; // czysci tekst w inpucie
+    //         });
+    //
+    //
+    //
+    //     hideButton.addEventListener("click", function(event) {
+    //         var tagInput = input.value;
+    //         for (i = 0; i < images.length; i++) {
+    //             var tag = images[i].dataset.tag;
+    //             if (tag.indexOf(tagInput) != -1) {
+    //                 images[i].classList.add("invisible");
+    //             }
+    //
+    //         }
+    //
+    //         tagInput = "";
+    //     });
+    //         });
 
+
+
+    $(function() {
+
+
+        jQuery(function($) {
+            // fancybox
+            $(".fancybox").fancybox({
+                modal: true, // disable regular nav and close buttons
+                // add buttons helper (requires buttons helper js and css files)
+                helpers: {
+                    buttons: {}
+                }
+            });
+            // filter selector
+            $(".portfolio_buttons").on("click", function() {
+                var $this = $(this);
+                // if we click the active tab, do nothing
+                if (!$this.hasClass("active")) {
+                    $(".filter").removeClass("active");
+                    $this.addClass("active"); // set the active tab
+                    // get the data-rel value from selected tab and set as filter
+                    var $filter = $this.data("rel");
+                    // if we select view all, return to initial settings and show all
+                    $filter == 'all' ?
+                        $(".fancybox")
+                        .attr("data-fancybox-group", "gallery")
+                        .not(":visible")
+                        .fadeIn() : // otherwise
+                        $(".fancybox")
+                        .fadeOut(0)
+                        .filter(function() {
+                            // set data-filter value as the data-rel value of selected tab
+                            return $(this).data("filter") == $filter;
+                        })
+                        // set data-fancybox-group and show filtered elements
+                        .attr("data-fancybox-group", $filter)
+                        .fadeIn(1000);
+                } // if
+            }); // on
+        }); // ready
+
+
+        var watchMoreBtn = $(".portfolio_watch_button");
+        var hiddenImages = $(".images-hidden");
+
+        watchMoreBtn.on("click", function() {
+            event.preventDefault();
+            hiddenImages.toggle();
+
+        });
+    });
+});
 
 
 $(function() {
 
+    var sendButton = $("#contact_btn");
 
-  jQuery(function ($) {
-      // fancybox
-      $(".fancybox").fancybox({
-          modal: true, // disable regular nav and close buttons
-          // add buttons helper (requires buttons helper js and css files)
-          helpers: {
-              buttons: {}
-          }
-      });
-      // filter selector
-      $(".portfolio_buttons").on("click", function () {
-          var $this = $(this);
-          // if we click the active tab, do nothing
-          if ( !$this.hasClass("active") ) {
-              $(".filter").removeClass("active");
-              $this.addClass("active"); // set the active tab
-              // get the data-rel value from selected tab and set as filter
-              var $filter = $this.data("rel");
-              // if we select view all, return to initial settings and show all
-              $filter == 'all' ?
-                  $(".fancybox")
-                  .attr("data-fancybox-group", "gallery")
-                  .not(":visible")
-                  .fadeIn()
-              : // otherwise
-                  $(".fancybox")
-                  .fadeOut(0)
-                  .filter(function () {
-                      // set data-filter value as the data-rel value of selected tab
-                      return $(this).data("filter") == $filter;
-                  })
-                  // set data-fancybox-group and show filtered elements
-                  .attr("data-fancybox-group", $filter)
-                  .fadeIn(1000);
-          } // if
-      }); // on
-  }); // ready
-
-
-    var watchMoreBtn = $(".portfolio_watch_button");
-    var hiddenImages = $(".images-hidden");
-
-    watchMoreBtn.on("click", function() {
+    sendButton.on("click", function() {
+        $(".error").remove();
         event.preventDefault();
-        hiddenImages.toggle();
 
-    });
-});
-});
+        var name = $("#name");
+        var email = $("#email");
+        var message = $("#comment");
+        var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+        var nameGetInfo = name.val();
+        var emailGetInfo = email.val();
+        var messageGetInfo = message.val();
+
+        if (nameGetInfo.length < 5) {
+            var newElement = $("<div class='error'>Imię powinno być dłuższe niż 5 znaków</div>");
+            newElement.insertAfter(name);
+        }
+
+        if (testEmail.test(emailGetInfo) === false) {
+            var newElement2 = $("<div class='error'>Nieprawidłowy adres e-mail</div>");
+            newElement2.insertAfter(email);
+        }
+
+        if (messageGetInfo.length < 10) {
+            var newElement3 = $("<div class='error'>Wiadomość powinna być dłuższa niż 10 znaków</div>");
+            newElement3.insertAfter(message);
+        }
+
+    }); //zamkniecie eventu click
+}); //zamkniecie funkcji

@@ -1623,6 +1623,11 @@ body {
   color: #fff;
 }
 
+.error {
+  font-size: 24px;
+  color: #6B2E68;
+}
+
 @media (max-width: 960px) {
   .form_contact {
     margin-top: 70px;
