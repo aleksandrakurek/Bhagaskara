@@ -1708,7 +1708,7 @@ body {
     line-height: 150%;
     resize: vertical;
   }
-  button {
+  #contact_btn {
     background: #9f449b;
     border-bottom: solid 5px #6B2E68;
     border-radius: 7px;
@@ -1730,7 +1730,7 @@ body {
     float: left;
     margin-left: 45px;
   }
-  button:hover {
+  #contact_btn:hover {
     color: #6B2E68;
     background: #FFF;
     border-top: solid 5px #6B2E68;
@@ -1768,12 +1768,15 @@ body {
     height: 78px;
     line-height: 78px;
     border-radius: 50%;
-    border: 1px solid #676767;
     font-size: 48px;
     font-weight: light;
     text-decoration: none;
     color: black;
     text-align: center;
+  }
+  .contact_social_icon:hover {
+    border: 1px solid #6B2E68;
+    color: #6B2E68;
   }
   .section_contact .logo {
     padding-top: 170px;

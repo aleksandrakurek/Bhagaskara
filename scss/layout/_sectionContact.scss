@@ -110,7 +110,7 @@
     //     width: 230px;
     //     height: 70px;
     // }
-    button {
+    #contact_btn {
       background: $color;
       border-bottom: solid 5px $border-color;
       border-radius: 7px;
@@ -133,7 +133,7 @@
       float: left;
       margin-left: 45px;
     }
-    button:hover {
+    #contact_btn:hover {
       color: $border-color;
       background: #FFF;
       border-top: solid 5px $border-color;
@@ -171,12 +171,15 @@
         height: 78px;
         line-height: 78px;
         border-radius: 50%;
-        border: 1px solid $diffrent-text-color;
         font-size: $font-size-l;
         font-weight: light;
         text-decoration: none;
         color: $font-color;
         text-align: center;
+    }
+    .contact_social_icon:hover {
+        border: 1px solid $border-color;
+        color: $border-color;
     }
     .section_contact {
         .logo {
