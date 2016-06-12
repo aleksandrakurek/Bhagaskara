@@ -349,6 +349,11 @@ body {
   text-align: center;
 }
 
+.nav_icon:hover {
+  background-image: url("/images/arrow1.png");
+  background-position: center;
+}
+
 @media (max-width: 320px) {
   .logo_text .logo {
     margin-left: 5%;
@@ -428,7 +433,7 @@ body {
 }
 
 .nav-collapse .active a,
-.nav-collapse a:active {
+.nav-collapse a:hover {
   color: #9f449b;
 }
 
@@ -648,7 +653,7 @@ body {
     z-index: 10000;
     top: 0;
     width: 100%;
-    height: 110px;
+    height: 80px;
   }
   .nav-collapse {
     float: right;
