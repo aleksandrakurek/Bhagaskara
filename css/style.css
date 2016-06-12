@@ -346,12 +346,21 @@ body {
 
 .nav_icon_arrange {
   margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+}
+
+.nav_icon {
+  background-image: url("/images/arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 85px;
+  height: 95px;
   text-align: center;
 }
 
 .nav_icon:hover {
   background-image: url("/images/arrow1.png");
-  background-position: center;
 }
 
 @media (max-width: 320px) {
@@ -426,9 +435,6 @@ body {
     margin: 0 auto;
     text-align: center;
     margin-left: 140px;
-  }
-  .nav_icon_arrange {
-    padding-top: 200px;
   }
 }
 
