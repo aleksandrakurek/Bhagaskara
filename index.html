@@ -9,8 +9,9 @@
     <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- fancybox -->
     <script src="fancybox/jquery.fancybox.js" type="text/javascript"></script>
-
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
 
 
 </head>
@@ -36,10 +37,10 @@
                         <!-- ta klasa nie jest nidzie uzyta ale div jest mi potrzebny do wyrownania ikon -->
 
                         <div class="icons_arrange_center">
-                            <a class="section_item_header section_item_header--services" href="#service-section">
+                            <a class="section_item_header section_item_header--services" href="#service">
                                 <p>Services</p>
                             </a>
-                            <a class="section_item_header section_item_header--portfolio" href="#portfolio-section">
+                            <a class="section_item_header section_item_header--portfolio" href="#portfolio">
                                 <p>Portfolio</p>
                             </a>
 
@@ -48,27 +49,27 @@
 
                         <div class="icons_arrange">
                             <div class="icons_arrange_left">
-                                <a class="section_item_header section_item_header--about" href="#about-section">
+                                <a class="section_item_header section_item_header--about" href="#about">
                                     <p>About</p>
                                 </a>
-                                <a class="section_item_header section_item_header--team" href="#team-section">
+                                <a class="section_item_header section_item_header--team" href="#team">
                                     <p>Team</p>
                                 </a>
 
                             </div>
 
                             <div class="icons_arrange_right">
-                                <a class="section_item_header section_item_header--blog" href="#blog-section">
+                                <a class="section_item_header section_item_header--blog" href="#blog">
                                     <p>Blog</p>
                                 </a>
-                                <a class="section_item_header section_item_header--contact" href="#contact-section">
+                                <a class="section_item_header section_item_header--contact" href="#contact">
                                     <p>Contact</p>
                                 </a>
                             </div>
                         </div>
 
                         <div class="nav_icon_arrange">
-                            <a href="#down"><img class="nav_icon" src="images/scroller.png" /></a>
+                            <a href="#down"><img class="nav_icon" src="images/arrow.png" /></a>
                         </div>
 
                     </div>
@@ -98,7 +99,7 @@
 
                 <nav class="nav-collapse">
                     <ul>
-                        <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
+                        <li class="menu-item"><a href="#home" data-scroll>Home</a></li>
                         <li class="menu-item"><a href="#about" data-scroll>About</a></li>
                         <li class="menu-item"><a href="#team" data-scroll>Team</a></li>
                         <li class="menu-item"><a href="#services" data-scroll>Services</a></li>
@@ -450,7 +451,80 @@
 
             <div class="images">
 
-                <div data-filter="web,icons"  data-fancybox-group="gallery" class="img_descr_item showPic fancybox">
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm1.staticflickr.com/288/19353466834_6be3600330_b.jpg" title="Neque Porro Quisquam web, icons">
+                    <img src="/images/tumblr_n2k1499dIp1st5lhmo1_1280.png" />
+                    <!-- <h3>Neque Porro Quisquam</h3>
+                    <p>web, icons</p> -->
+                </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg" title="Sgwd Ddwli Uchaf, Brecon Waterfalls (technodean2000)">
+                    <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
+                    <!-- <h3>Neque Porro Quisquam</h3>
+                  <p>icons</p> -->
+                </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" title="Golden Manarola (Sanjeev Deo)">
+                    <img src="/images/tumblr_n2k114hDQX1st5lhmo1_1280.png" />
+                    <!-- <h3>Neque Porro Quisquam</h3>
+                    <p>apps</p> -->
+                </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                    <img src="/images/tumblr_n2k10foRBd1st5lhmo1_1280.png" />
+                    <!-- <h3>Neque Porro Quisquam</h3>
+                    <p>web</p> -->
+                </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                    <img src="/images/tumblr_n2k114hDQX1st5lhmo1_1280.png" />
+                    <!-- <h3>Neque Porro Quisquam</h3>
+                    <p>web, apps</p> -->
+                </a>
+                <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                    <img src="/images/tumblr_n2k10foRBd1st5lhmo1_1280.png" />
+                    <!-- <h3>Neque Porro Quisquam</h3>
+                    <p>web</p> -->
+                </a>
+
+
+
+
+                <div class="images images-hidden">
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                        <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
+                        <!-- <h3>Neque Porro Quisquam</h3>
+                      <p>web, icons</p> -->
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                        <img src="/images/tumblr_n1ipqbCLKd1st5lhmo1_1280.png" />
+                        <!-- <h3>Neque Porro Quisquam</h3>
+                      <p>web, icons, apps</p> -->
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm1.staticflickr.com/288/19353466834_6be3600330_b.jpg" title="Making a summer # 3 :) ((Nikon woman))">
+                        <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
+                        <!-- <h3>Neque Porro Quisquam</h3>
+                        <p>web, icons</p> -->
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg" title="Sgwd Ddwli Uchaf, Brecon Waterfalls (technodean2000)">
+                        <img src="/images/tumblr_n1ipqbCLKd1st5lhmo1_1280.png" />
+                        <!-- <h3>Neque Porro Quisquam</h3>
+                        <p>web, icons, apps</p> -->
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" title="Golden Manarola (Sanjeev Deo)">
+                        <img src="/images/tumblr_n2k1499dIp1st5lhmo1_1280.png" />
+                        <!-- <h3>Neque Porro Quisquam</h3>
+                        <p>web, icons</p> -->
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                        <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
+                        <!-- <h3>Neque Porro Quisquam</h3>
+                        <p>icons</p> -->
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                        <img src="/images/tumblr_n2k15mq4xy1st5lhmo1_1280.png" />
+                        <!-- <h3>Neque Porro Quisquam</h3>
+                        <p>icons</p> -->
+                    </a>
+                </div>
+
+
+                <!-- <div data-filter="web,icons"  data-fancybox-group="gallery" class="img_descr_item showPic fancybox">
                     <img src="/images/tumblr_n2k1499dIp1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>web, icons</p>
@@ -465,7 +539,7 @@
                 <div data-filter="apps"  data-fancybox-group="gallery" class="img_descr_item fancybox">
                     <img src="/images/tumblr_n2k114hDQX1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
-                    <p>apps</p>
+                    <p>wapps</p>
                 </div>
 
                 <div data-filter="web"  data-fancybox-group="gallery" class="img_descr_item fancybox">
@@ -489,7 +563,7 @@
 
             <div class="images images-hidden">
 
-                <div data-filter="web,icons"  data-fancybox-group="gallery" class="img_descr_item showPic fancybox">
+                <div data-filter="web,icons" data-fancybox-group="gallery" class="img_descr_item showPic fancybox">
                     <img src="/images/tumblr_n2k1499dIp1st5lhmo1_1280.png" />
                     <h3>Neque Porro Quisquam</h3>
                     <p>web, icons</p>
@@ -524,13 +598,13 @@
                     <h3>Neque Porro Quisquam</h3>
                     <p>web, icons, apps</p>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="portfolio_watch_button">
-                <button>Watch more</button>
-            </div>
+                <div class="portfolio_watch_button">
+                    <button>Watch more</button>
+                </div>
 
-        </div>
+            </div>
     </section>
 
     <!-- SECTION CONTACT   -->
