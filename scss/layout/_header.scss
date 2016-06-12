@@ -104,6 +104,12 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.nav_icon:hover {
+    background-image: url("/images/arrow1.png");
+    background-position: center;
+}
+
 @media (max-width: $mobile) {
     .logo_text {
         .logo {
