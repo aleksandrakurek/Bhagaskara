@@ -369,8 +369,15 @@ body {
     padding: 10px;
     width: 90%;
   }
+  .logo_text h3 {
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: lighter;
+  }
   .logo_text p {
-    padding-top: 10px;
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: lighter;
   }
   .icons_arrange_center,
   .icons_arrange_left,
@@ -386,8 +393,15 @@ body {
     margin-left: 5%;
     width: 90%;
   }
+  .logo_text h3 {
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: lighter;
+  }
   .logo_text p {
-    padding-top: 10px;
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: lighter;
   }
   .icons_arrange_center,
   .icons_arrange_left,
@@ -901,6 +915,35 @@ body {
   .about_us_text div {
     text-align: center;
   }
+  .about_us_text div button {
+    cursor: pointer;
+    background-color: #9f449b;
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: normal;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0 6px 0 0 #6b2e68;
+    width: 230px;
+    height: 75px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about_us_text div button:hover {
+    color: #6B2E68;
+    background: #FFF;
+    border-top: solid 5px #6B2E68;
+    border-bottom: solid 2px #6B2E68;
+    border-left: solid 2px #6B2E68;
+    border-right: solid 2px #6B2E68;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 960px) {
@@ -908,6 +951,7 @@ body {
     margin: 0 auto;
     width: 100%;
     height: auto;
+    min-height: 500px;
   }
   .about_us_img {
     padding-top: 100px;
@@ -934,8 +978,27 @@ body {
     line-height: 30px;
     padding-left: 10%;
   }
-  .about_us_text div #about_us_btn {
-    float: left;
+  .about_us_text div button {
+    background: #9f449b;
+    border-bottom: solid 5px #6B2E68;
+    border-radius: 7px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    transition: background-color .3s linear, border .2s linear;
+  }
+  .about_us_text div button:hover {
+    color: #6B2E68;
+    background: #FFF;
+    border-top: solid 5px #6B2E68;
+    border-bottom: solid 2px #6B2E68;
+    border-left: solid 2px #6B2E68;
+    border-right: solid 2px #6B2E68;
   }
 }
 
