@@ -288,6 +288,32 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+// Gallery filter
+var galleryButtons = $(".portfolio_buttons");
+var galleryImages = $(".images").find("a");
+
+
+galleryButtons.on("click", function() {
+    var galleryBtnTag = $(this).data("tag");
+    event.preventDefault();
+    if ($(this).index() === 0) {
+        galleryImages.removeClass("hide");
+    } else {
+        galleryImages.each(function() {
+            var imgTag = $(this).data("tag");
+
+            if (imgTag.indexOf(galleryBtnTag) == -1) {
+                $(this).addClass("hide");
+            } else {
+                $(this).removeClass("hide");
+
+            }
+        });
+    }
+});
+});
+
 // Watch more button
 $(function() {
     var watchMoreBtn = $(".portfolio_watch_button");
