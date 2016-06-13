@@ -1334,7 +1334,7 @@ body {
     background-position: center;
     min-height: 625px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 10%;
   }
   .backgroundOurServices p {
     margin-top: -50px;
@@ -1380,7 +1380,7 @@ body {
     background-position: center;
     min-height: 625px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 15%;
   }
   .backgroundOurServices p {
     margin-top: -50px;
