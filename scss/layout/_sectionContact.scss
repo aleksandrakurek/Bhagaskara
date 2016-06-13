@@ -1,26 +1,97 @@
-.error{
-  font-size:$font-size-m;
-  color:$border-color;
+.error {
+    font-size: $font-size-m;
+    color: $border-color;
 }
-  @media (max-width:$desktop) {
+@media (max-width:$desktop) {
+    .section_contact {
+        width: 100%;
+        height: auto;
+    }
     .form_contact {
         margin-top: 70px;
-        height: 620px;
+        height: 500px;
         padding-top: 15px;
     }
     .form-div {
         margin: 0 auto;
         text-align: center;
     }
-    .text_contact {
-        height: 620px;
-        width: 45%;
-        padding-top: 70px;
-        margin: 0 auto;
+    .feedback-input {
+        color: $font-color;
+        font-weight: lighter;
+        font-size: $font-size-m;
+        line-height: 28px;
+        background-color: $text-color;
+        padding: 13px 13px 13px 30px;
+        margin-bottom: 10px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid $diffrent-text-color;
+    }
+    .feedback-input:focus {
+        background: $text-color;
+        // box-shadow: 0;
+        border: 1px solid $diffrent-text-color;
+        color: $diffrent-text-color;
+        outline: none;
+        padding: 13px 13px 13px 30px;
+    }
+    textarea {
+        width: 100%;
+        height: 350px;
+        line-height: 150%;
+        resize: vertical;
+    }
+    #contact_btn {
+        background: $color;
+        border-bottom: solid 5px $border-color;
+        border-radius: 7px;
+        padding-top: 22px;
+        padding-bottom: 22px;
         text-align: center;
+        font-size: $font-size-m;
+        text-decoration: none;
+        color: $text-color;
+        display: block;
+        width: 220px;
+        margin: 0 auto;
+        transition: background-color 0.3s linear, border 0.2s linear;
+
+    }
+    #about_us_btn {
+        float: left;
+        margin-left: 45px;
+    }
+    #contact_btn:hover {
+        color: $border-color;
+        background: #FFF;
+        border-top: solid 5px $border-color;
+        border-bottom: solid 2px $border-color;
+        border-left: solid 2px $border-color;
+        border-right: solid 2px $border-color;
+    }
+    .text_contact {
+        margin-top: 470px;
+        padding: 15px;
+        text-align: center;
+        p {
+            color: $diffrent-text-color;
+            display: inline-block;
+            text-align: left;
+            font-size: $font-size-m;
+            position: relative;
+        }
+        h3 {
+            color: $font-color;
+            display: inline-block;
+            text-align: left;
+            font-size: $font-size-m;
+        }
     }
     .contact_icons {
-        text-align: left;
         position: relative;
         margin: 0 auto;
         text-align: center;
@@ -28,28 +99,36 @@
     .contact_social_icon {
         margin-top: 20px;
         margin-right: 35px;
+        display: inline-block;
+        border: 1px solid $diffrent-text-color;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        font-size: $font-size-m;
+        font-weight: light;
+        text-decoration: none;
+        color: $font-color;
+        text-align: center;
+    }
+    .contact_social_icon:hover {
+        border: 1px solid $color;
+        color: $color;
     }
     .section_contact {
         .logo {
-            padding-top: 170px;
-            margin-left: 35%;
             text-align: center;
-
+            padding-top: 10%;
         }
     }
-
-
-
-  }
-  // zamkniecie media dla mobile-desktop
-  @media (min-width: $desktop) {
-
+}
+// zamkniecie media dla mobile-desktop
+@media (min-width: $desktop) {
     .section_contact {
         width: 100%;
         height: auto;
         min-height: 1300px;
         margin-top: 190px;
-
     }
     .form_contact {
         float: left;
@@ -91,55 +170,35 @@
         line-height: 150%;
         resize: vertical;
     }
-    // #button {
-    //   cursor: pointer;
-    //   background-color: $color;
-    //   color: $text-color;
-    //   font-size: $font-size-m;
-    //   padding-top: 22px;
-    //   padding-bottom: 22px;
-    //   -webkit-transition: all 0.3s;
-    //   -moz-transition: all 0.3s;
-    //   transition: all 0.3s;
-    //   margin-top: -4px;
-    //   font-weight: normal;
-    //   border-radius: 8px;
-    //   border: 0;
-    //   box-shadow: 0 6px 0 0 #6b2e68;
-    //     float: left;
-    //     width: 230px;
-    //     height: 70px;
-    // }
     #contact_btn {
-      background: $color;
-      border-bottom: solid 5px $border-color;
-      border-radius: 7px;
-      padding-top: 22px;
-      padding-bottom: 22px;
-      text-align: center;
-      font-size: $font-size-m;
-      text-decoration: none;
-      color: $text-color;
-      display: block;
-      width: 220px;
-      margin: 0 auto;
-      transition: background-color .3s linear, border .2s linear;
-      // float: left;
+        background: $color;
+        border-bottom: solid 5px $border-color;
+        border-radius: 7px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        text-align: center;
+        font-size: $font-size-m;
+        text-decoration: none;
+        color: $text-color;
+        display: block;
+        width: 220px;
+        margin: 0 auto;
+        transition: background-color 0.3s linear, border 0.2s linear;
     }
-    #contact_btn{
-      float: left;
+    #contact_btn {
+        float: left;
     }
-    #about_us_btn{
-      float: left;
-      margin-left: 45px;
+    #about_us_btn {
+        float: left;
+        margin-left: 45px;
     }
     #contact_btn:hover {
-      color: $border-color;
-      background: #FFF;
-      border-top: solid 5px $border-color;
-      border-bottom: solid 2px $border-color;
-      border-left: solid 2px $border-color;
-      border-right: solid 2px $border-color;
+        color: $border-color;
+        background: #FFF;
+        border-top: solid 5px $border-color;
+        border-bottom: solid 2px $border-color;
+        border-left: solid 2px $border-color;
+        border-right: solid 2px $border-color;
     }
     .text_contact {
         height: 620px;
@@ -188,5 +247,5 @@
             text-align: center;
         }
     }
-  }
+}
 // zamkniecie media dla mobile-desktop

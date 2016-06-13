@@ -287,12 +287,11 @@ $(document).ready(function() {
 
 });
 
-
-$(document).ready(function() {
 // Gallery filter
+$(document).ready(function() {
+
 var galleryButtons = $(".portfolio_buttons");
 var galleryImages = $(".images").find("a");
-
 
 galleryButtons.on("click", function() {
     var galleryBtnTag = $(this).data("tag");
