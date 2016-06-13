@@ -1082,30 +1082,11 @@ body {
   margin-left: -40px;
 }
 
-.slider {
-  margin: 0 auto;
-  width: 900px;
-  overflow: hidden;
-  font-size: 0;
-}
-
-.slider ul {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.slider li {
-  display: inline-block;
-  width: 300px;
-}
-
 .person {
   min-height: 500px;
   height: auto;
   padding-bottom: 100px;
   min-width: 300px;
-  padding-left: 20px;
 }
 
 .person #img_person1 {
@@ -1204,9 +1185,20 @@ body {
 }
 
 @media (max-width: 960px) {
-  #person2,
-  #person3 {
-    display: none;
+  .slider {
+    margin: 0 auto;
+    width: 300px;
+    overflow: hidden;
+    font-size: 0;
+  }
+  .slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .slider li {
+    display: inline-block;
+    width: 300px;
   }
   .person {
     margin: 0 auto;
@@ -1221,11 +1213,27 @@ body {
 }
 
 @media (min-width: 960px) {
+  .slider {
+    margin: 0 auto;
+    width: 900px;
+    overflow: hidden;
+    font-size: 0;
+  }
+  .slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .slider li {
+    display: inline-block;
+    width: 300px;
+  }
   .person {
     float: left;
     width: 30%;
     margin: 1%;
     padding-top: 100px;
+    padding-left: 20px;
   }
   .person .circle_mugshot {
     margin-left: 18%;
