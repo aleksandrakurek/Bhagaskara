@@ -200,50 +200,50 @@
             text-align: left;
             line-height: 30px;
         }
-        // button {
-        //     cursor: pointer;
-        //     background-color: $color;
-        //     color: $text-color;
-        //     font-size: $font-size-m;
-        //     padding-top: 22px;
-        //     padding-bottom: 22px;
-        //     -webkit-transition: all 0.3s;
-        //     -moz-transition: all 0.3s;
-        //     transition: all 0.3s;
-        //     margin-top: -4px;
-        //     font-weight: normal;
-        //     border-radius: 8px;
-        //     border: 0;
-        //     box-shadow: 0 6px 0 0 #6b2e68;
-        //     float: left;
-        //     width: 230px;
-        //     height: 75px;
-        //     padding: 20px;
-        //     margin-left: 50px;
-        // }
-        // button {
-        //   background: $color;
-        //   border-bottom: solid 5px $border-color;
-        //   border-radius: 7px;
-        //   padding-top: 22px;
-        //   padding-bottom: 22px;
-        //   text-align: center;
-        //   font-size: $font-size-m;
-        //   text-decoration: none;
-        //   color: $text-color;
-        //   display: block;
-        //   width: 220px;
-        //   margin: 0 auto;
-        //   transition: background-color .3s linear, border .2s linear;
-        // }
-        // button:hover {
-        //   color: $border-color;
-        //   background: #FFF;
-        //   border-top: solid 5px $border-color;
-        //   border-bottom: solid 2px $border-color;
-        //   border-left: solid 2px $border-color;
-        //   border-right: solid 2px $border-color;
-        // }
+        button {
+            cursor: pointer;
+            background-color: $color;
+            color: $text-color;
+            font-size: $font-size-m;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            margin-top: -4px;
+            font-weight: normal;
+            border-radius: 8px;
+            border: 0;
+            box-shadow: 0 6px 0 0 #6b2e68;
+            float: left;
+            width: 230px;
+            height: 75px;
+            padding: 20px;
+            margin-left: 50px;
+        }
+        button {
+          background: $color;
+          border-bottom: solid 5px $border-color;
+          border-radius: 7px;
+          padding-top: 22px;
+          padding-bottom: 22px;
+          text-align: center;
+          font-size: $font-size-m;
+          text-decoration: none;
+          color: $text-color;
+          display: block;
+          width: 220px;
+          margin: 0 auto;
+          transition: background-color .3s linear, border .2s linear;
+        }
+        button:hover {
+          color: $border-color;
+          background: #FFF;
+          border-top: solid 5px $border-color;
+          border-bottom: solid 2px $border-color;
+          border-left: solid 2px $border-color;
+          border-right: solid 2px $border-color;
+        }
     }
 }
 // zamkniecie media dla desktop
