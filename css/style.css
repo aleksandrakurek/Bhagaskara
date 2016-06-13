@@ -1473,98 +1473,164 @@ body {
   }
 }
 
-.numbers {
-  margin: 0 auto;
-  padding: 175px 0 0;
-  text-align: center;
-  min-height: 900px;
-  background-color: #eeeeee;
+@media (max-width: 960px) {
+  .numbers {
+    margin: 0 auto;
+    text-align: center;
+    min-height: 900px;
+    background-color: #eeeeee;
+  }
+  .section_numbers_border {
+    border-bottom: 25px solid white;
+  }
+  .number_items {
+    display: inline-block;
+    margin: 7%;
+  }
+  .number_items h1,
+  .number_items p {
+    color: #676767;
+  }
+  .number_items h1 {
+    font-size: 64px;
+    color: black;
+    font-weight: normal;
+  }
+  .number_items p {
+    font-size: 16px;
+    margin-top: -45px;
+  }
+  .minislider {
+    margin: 0 auto;
+    width: 300px;
+    overflow: hidden;
+    font-size: 0;
+  }
+  .minislider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .minislider li {
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+  }
+  .minislider div {
+    border: 3px solid hotpink;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+  }
+  .minislider img {
+    border-radius: 50%;
+  }
+  .minislider p {
+    line-height: 1.4;
+    margin-top: 50px;
+    font-size: 24px;
+    color: black;
+  }
+  .minislider .autor {
+    margin-top: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+  }
+  .minislider_btns {
+    margin: 5px 0;
+    margin-top: 20%;
+  }
+  .minislider_btns span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #aaaaaa;
+  }
 }
 
-.section_numbers_border {
-  border-bottom: 45px solid white;
-}
-
-.number_items {
-  display: inline-block;
-}
-
-.number_items h1,
-.number_items p {
-  color: #676767;
-}
-
-.number_items h1 {
-  font-size: 64px;
-  margin: 60px;
-  color: black;
-  font-weight: normal;
-}
-
-.number_items p {
-  font-size: 16px;
-  margin-top: -45px;
-}
-
-.minislider {
-  margin: 0 auto;
-  width: 500px;
-  overflow: hidden;
-  font-size: 0;
-  padding: 50px 0;
-}
-
-.minislider ul {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.minislider li {
-  display: inline-block;
-  width: 500px;
-  height: 600px;
-}
-
-.minislider div {
-  display: inline-block;
-}
-
-.minislider img {
-  border-radius: 50%;
-}
-
-.minislider p {
-  line-height: 1.4;
-  margin-top: 50px;
-  font-size: 33px;
-  color: black;
-}
-
-.minislider .autor {
-  margin-top: 50px;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: black;
-}
-
-.minislider_btns {
-  margin: 5px 0;
-  padding: 0 5px;
-}
-
-.minislider_btns span {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #aaaaaa;
-}
-
-.active_minislider_btn {
-  background: #aaaaaa;
+@media (min-width: 960px) {
+  .numbers {
+    margin: 0 auto;
+    padding: 175px 0 0;
+    text-align: center;
+    min-height: 900px;
+    background-color: #eeeeee;
+  }
+  .section_numbers_border {
+    border-bottom: 45px solid white;
+  }
+  .number_items {
+    display: inline-block;
+  }
+  .number_items h1,
+  .number_items p {
+    color: #676767;
+  }
+  .number_items h1 {
+    font-size: 64px;
+    margin: 60px;
+    color: black;
+    font-weight: normal;
+  }
+  .number_items p {
+    font-size: 16px;
+    margin-top: -45px;
+  }
+  .minislider {
+    margin: 0 auto;
+    width: 500px;
+    overflow: hidden;
+    font-size: 0;
+    padding: 50px 0;
+  }
+  .minislider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .minislider li {
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+  }
+  .minislider div {
+    display: inline-block;
+  }
+  .minislider img {
+    border-radius: 50%;
+  }
+  .minislider p {
+    line-height: 1.4;
+    margin-top: 50px;
+    font-size: 33px;
+    color: black;
+  }
+  .minislider .autor {
+    margin-top: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+  }
+  .minislider_btns {
+    margin: 5px 0;
+    padding: 0 5px;
+  }
+  .minislider_btns span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #aaaaaa;
+  }
+  .active_minislider_btn {
+    background: #aaaaaa;
+  }
 }
 
 .hide {
