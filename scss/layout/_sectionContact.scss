@@ -158,9 +158,14 @@ textarea {
         width: 45%;
         float: right;
         margin-top: 170px;
+        h3{
+      float: left;
+      padding-bottom: 30px;
+        }
     }
     .contact_icons {
-        text-align: left;
+        text-align: center;
+        float: left;
     }
     .contact_social_icon {
         width: 78px;

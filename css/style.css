@@ -1993,8 +1993,13 @@ textarea {
     float: right;
     margin-top: 170px;
   }
+  .text_contact h3 {
+    float: left;
+    padding-bottom: 30px;
+  }
   .contact_icons {
-    text-align: left;
+    text-align: center;
+    float: left;
   }
   .contact_social_icon {
     width: 78px;
