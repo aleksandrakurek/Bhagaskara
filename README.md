@@ -1,6 +1,6 @@
-8.06.2016
+14.06.2016
+Almost done. There may be still some bugs but I'm working on it!
 
-Work in progress :) Pls come back in short time- I'm going to finish it soon!
 
 So far:
  - CSS parallax effect,
@@ -8,7 +8,8 @@ So far:
  - hamburger menu,
  - sticky menu,
  - slider,
- - gallery (...i'm currently working at this one :). I'm using here jQuery plugin fancyBox https://github.com/fancyapps/fancyBox.
+ - gallery works on jQuery plugin fancyBox https://github.com/fancyapps/fancyBox.
+ - form check,
 
 
 
