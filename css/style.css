@@ -7,21 +7,18 @@
 @media (max-width: 320px) {
   .container {
     width: 90vw;
-    border: 0.1em solid red;
   }
 }
 
 @media (min-width: 320px) and (max-width: 960px) {
   .container {
     width: 90vw;
-    border: 1px solid blue;
   }
 }
 
 @media (min-width: 960px) {
   .container {
     width: 1080px;
-    border: 1px solid green;
   }
 }
 

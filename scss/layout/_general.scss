@@ -6,21 +6,21 @@
 @media (max-width: $mobile) {
     .container {
         width: 90vw;
-        border: 0.1em solid red;
+        // border: 0.1em solid red;
     }
 }
 //zamkniecie media dla mobile
 @media (min-width: $mobile) and (max-width:$desktop) {
     .container {
         width: 90vw;
-        border: 1px solid blue;
+        // border: 1px solid blue;
     }
 }
 //zamkniecie media dla mobile-desktop
 @media (min-width: $desktop) {
     .container {
         width: 1080px;
-        border: 1px solid green;
+        // border: 1px solid green;
     }
 }
 // zamkniecie media dla desktop
