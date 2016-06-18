@@ -1,6 +1,6 @@
 @media (max-width: $mobile) {
     .backgroundOurServices {
-        background: url("/images/background_section.png") no-repeat;
+        background: url("../images/background_section.png") no-repeat;
         background-size: cover;
         background-position: center;
         min-height: 625px;
@@ -17,7 +17,7 @@
         }
     }
     .section_item_serv {
-        background: url("/images/shape1.svg") no-repeat top center;
+        background: url("../images/shape1.svg") no-repeat top center;
         display: inline-block;
         margin: 0 auto;
         width: 166px;
@@ -37,7 +37,7 @@
     }
     .section_item--bubble_serv {
         &::before {
-            background-image: url("/images/bubble.svg");
+            background-image: url("../images/bubble.svg");
             width: 80px;
             height: 80px;
             top: 15%;
@@ -48,7 +48,7 @@
 //zamkniecie media dla mobile
 @media (min-width: $mobile) and (max-width:$desktop) {
     .backgroundOurServices {
-        background: url("/images/background_section.png") no-repeat;
+        background: url("../images/background_section.png") no-repeat;
         background-size: cover;
         background-position: center;
         min-height: 625px;
@@ -65,7 +65,7 @@
         }
     }
     .section_item_serv {
-        background: url("/images/shape1.svg") no-repeat top center;
+        background: url("../images/shape1.svg") no-repeat top center;
         display: inline-block;
         margin: 0 auto;
         width: 166px;
@@ -85,7 +85,7 @@
     }
     .section_item--bubble_serv {
         &::before {
-            background-image: url("/images/bubble.svg");
+            background-image: url("../images/bubble.svg");
             width: 80px;
             height: 80px;
             top: 15%;
@@ -96,7 +96,7 @@
 //zamkniecie media dla mobile-desktop
 @media (min-width: $desktop) {
     .backgroundOurServices {
-        background: url("/images/background_section.png") repeat fixed 100%;
+        background: url("../images/background_section.png") repeat fixed 100%;
         background-size: cover;
         background-position: center;
         min-height: 625px;
@@ -113,7 +113,7 @@
         }
     }
     .section_item_serv {
-        background: url("/images/shape1.svg") no-repeat top center;
+        background: url("../images/shape1.svg") no-repeat top center;
         display: inline-block;
         margin: 0 auto;
         width: 166px;
@@ -133,7 +133,7 @@
     }
     .section_item--bubble_serv {
         &::before {
-            background-image: url("/images/bubble.svg");
+            background-image: url("../../images/bubble.svg");
             width: 80px;
             height: 80px;
             top: 15%;
